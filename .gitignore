@@ -1,8 +1,26 @@
-# Local browser profiles and test caches
+# Git and dependency internals
+.git/
+node_modules/
+vendor/
+__pycache__/
+.next/
+dist/
+build/
+coverage/
+
+# Local browser profiles, caches and diagnostics
 chrome-*/
 *chrome*profile*/
+Safe Browsing/
+GPUCache/
+Cache/
+Code Cache/
+ShaderCache/
+DawnWebGPUCache/
+DawnGraphiteCache/
+*.log
 
-# Database and WordPress backups
+# Database and backup artifacts
 mysql-*/
 *-backup-*/
 wp-home-*-backup-*/
@@ -14,25 +32,18 @@ home-before-*/
 *.MAI
 *.pma
 *.opt
+*.db
+*.db-journal
 
-# Downloaded or extracted third-party packages
-elementor-*-extract/
-elementor-*.zip
+# Downloaded packages and binaries
 *.zip
 *.rar
 *.7z
+*.exe
+*.msi
+*.dll
 
-# Captured diagnostics and generated artifacts
-*.log
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.webp
-elementor-*-response.html
-elementor-*-dom.html
-
-# Common local/temp files
+# Local secrets and temp files
 .env
 .env.*
 *.tmp
@@ -47,3 +58,19 @@ check-editor-assets.php
 check-elementor-editor.php
 fetch-elementor-editor.php
 fetch-elementor-preview.php
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Packaged builds and generated runtimes
+installed-*/
+_internal/
+**/.venv/
+**/venv/
+**/env/
+
+# Extracted third-party source trees
+wordpress-extract/
+*-extract/

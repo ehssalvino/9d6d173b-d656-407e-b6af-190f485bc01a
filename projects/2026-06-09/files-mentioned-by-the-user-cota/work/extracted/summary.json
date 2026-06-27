@@ -1,0 +1,81 @@
+{
+  "files": [
+    {
+      "file": "COTAÇÃO DE CFTV.pdf",
+      "type": "pdf",
+      "pages": 2,
+      "paragraphs": 0,
+      "tables": 0,
+      "sheets": []
+    },
+    {
+      "file": "Orçamento portão-1.pdf",
+      "type": "pdf",
+      "pages": 2,
+      "paragraphs": 0,
+      "tables": 0,
+      "sheets": []
+    },
+    {
+      "file": "Orçamento-WEB-005927794 (1).pdf",
+      "type": "pdf",
+      "pages": 4,
+      "paragraphs": 0,
+      "tables": 0,
+      "sheets": []
+    },
+    {
+      "file": "Proposta_Fazenda_Sr_Luiz_Sergio.docx",
+      "type": "docx",
+      "pages": 0,
+      "paragraphs": 73,
+      "tables": 2,
+      "sheets": []
+    },
+    {
+      "file": "Proposta_Fazenda_Sr_Luiz_Sergio_FINAL.docx",
+      "type": "docx",
+      "pages": 0,
+      "paragraphs": 73,
+      "tables": 2,
+      "sheets": []
+    },
+    {
+      "file": "Proposta_Fazenda_Sr_Luiz_Sergio_FINAL.pdf",
+      "type": "pdf",
+      "pages": 7,
+      "paragraphs": 0,
+      "tables": 0,
+      "sheets": []
+    },
+    {
+      "file": "TABELA^LLLLLLLLLLLLMDE^LLLLLLLLLLLLMDIMENSIONAMENTO^LLLLLLLLLLkarlaPaiva.xlsx",
+      "type": "xlsx",
+      "pages": 0,
+      "paragraphs": 0,
+      "tables": 0,
+      "sheets": [
+        {
+          "name": "Dados Iniciais",
+          "populated_cells": 170
+        },
+        {
+          "name": "Dimensionamento",
+          "populated_cells": 203
+        },
+        {
+          "name": "Proposta",
+          "populated_cells": 139
+        },
+        {
+          "name": "# BD_CID",
+          "populated_cells": 38570
+        },
+        {
+          "name": "# BD_VFIN",
+          "populated_cells": 320
+        }
+      ]
+    }
+  ]
+}

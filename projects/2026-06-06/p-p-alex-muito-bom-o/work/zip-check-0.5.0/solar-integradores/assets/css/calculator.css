@@ -1,0 +1,116 @@
+:root {
+    --si-ink: #17231d;
+    --si-muted: #657068;
+    --si-green: #16784a;
+    --si-green-dark: #0f5837;
+    --si-lime: #d9f26a;
+    --si-paper: #f7f8f3;
+    --si-line: #dce2d8;
+    --si-error: #a62b2b;
+}
+
+.si-app {
+    box-sizing: border-box;
+    max-width: 1080px;
+    margin: 32px auto;
+    padding: clamp(22px, 4vw, 48px);
+    border: 1px solid var(--si-line);
+    border-radius: 24px;
+    color: var(--si-ink);
+    background: linear-gradient(145deg, #fff 0%, var(--si-paper) 100%);
+    box-shadow: 0 24px 70px rgba(23, 35, 29, .09);
+}
+
+.si-app *, .si-app *::before, .si-app *::after { box-sizing: border-box; }
+.si-narrow { max-width: 620px; }
+.si-heading { max-width: 720px; margin-bottom: 30px; }
+.si-heading h2 { margin: 4px 0 8px; font-size: clamp(30px, 5vw, 52px); line-height: 1; letter-spacing: -.04em; }
+.si-heading p { margin: 0; color: var(--si-muted); font-size: 17px; }
+.si-eyebrow { color: var(--si-green); font-size: 12px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.si-form { display: grid; gap: 22px; }
+.si-grid { display: grid; gap: 18px; }
+.si-grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.si-grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.si-form label { display: grid; gap: 8px; color: var(--si-ink); font-size: 13px; font-weight: 750; }
+.si-form input, .si-form select {
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 13px;
+    border: 1px solid var(--si-line);
+    border-radius: 11px;
+    color: var(--si-ink);
+    background: #fff;
+    font: inherit;
+    font-weight: 500;
+}
+.si-form input:focus, .si-form select:focus { outline: 3px solid rgba(217, 242, 106, .55); border-color: var(--si-green); }
+.si-location { position: relative; }
+.si-suggestions {
+    position: absolute;
+    z-index: 20;
+    top: 100%;
+    right: 0;
+    left: 0;
+    max-height: 260px;
+    overflow: auto;
+    border: 1px solid var(--si-line);
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 16px 34px rgba(23, 35, 29, .14);
+}
+.si-suggestions button { display: block; width: 100%; padding: 10px 12px; border: 0; border-bottom: 1px solid var(--si-line); background: #fff; color: var(--si-ink); text-align: left; cursor: pointer; }
+.si-suggestions button:hover { background: var(--si-paper); }
+.si-panel { padding: 20px; border: 1px solid var(--si-line); border-radius: 16px; background: rgba(255,255,255,.75); }
+.si-panel h3 { margin: 0 0 18px; font-size: 18px; }
+.si-location-info { padding: 12px 15px; border-radius: 10px; background: #edf6ef; color: var(--si-green-dark); font-size: 14px; }
+.si-button {
+    justify-self: start;
+    min-height: 50px;
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--si-green);
+    font-weight: 800;
+    cursor: pointer;
+}
+.si-button:hover { background: var(--si-green-dark); }
+.si-button-secondary { border: 1px solid var(--si-line); color: var(--si-ink); background: #fff; }
+.si-button-secondary:hover { color: #fff; background: var(--si-ink); }
+.si-button-whatsapp { background: #168c4b; }
+.si-button:disabled { cursor: wait; opacity: .65; }
+.si-message { min-height: 20px; font-size: 14px; }
+.si-message.is-error { color: var(--si-error); }
+.si-message.is-success { color: var(--si-green); }
+.si-results { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 28px; }
+.si-results article { min-height: 150px; padding: 20px; border-radius: 16px; background: var(--si-ink); color: #fff; }
+.si-results article:first-child { background: var(--si-lime); color: var(--si-ink); }
+.si-results article span, .si-results article small { display: block; opacity: .72; }
+.si-results article strong { display: block; margin: 18px 0 2px; font-size: clamp(27px, 4vw, 40px); line-height: 1; }
+.si-results article strong.si-result-text { font-size: clamp(20px, 3vw, 29px); line-height: 1.1; }
+.si-warnings { grid-column: 1 / -1; padding: 14px 18px; border-left: 4px solid #d19522; background: #fff7e7; }
+.si-warnings p { margin: 5px 0; }
+.si-price-result { background: var(--si-green) !important; }
+.si-disclaimer { grid-column: 1 / -1; margin: 4px 0 0; color: var(--si-muted); font-size: 13px; }
+.si-notice { padding: 16px 18px; border: 1px solid var(--si-line); border-radius: 12px; background: var(--si-paper); }
+.si-table-wrap { overflow-x: auto; }
+.si-table { width: 100%; border-collapse: collapse; }
+.si-table th, .si-table td { padding: 13px 10px; border-bottom: 1px solid var(--si-line); text-align: left; }
+.si-modal[hidden] { display: none; }
+.si-modal { position: fixed; z-index: 999999; inset: 0; display: grid; place-items: center; padding: 18px; }
+.si-modal-backdrop { position: absolute; inset: 0; background: rgba(10, 20, 14, .72); backdrop-filter: blur(5px); }
+.si-modal-dialog { position: relative; z-index: 1; width: min(100%, 560px); max-height: calc(100vh - 36px); overflow-y: auto; padding: clamp(24px, 5vw, 42px); border-radius: 22px; background: #fff; box-shadow: 0 30px 100px rgba(0,0,0,.3); }
+.si-modal-dialog h3 { margin: 5px 0 10px; font-size: clamp(28px, 5vw, 42px); line-height: 1.05; letter-spacing: -.03em; }
+.si-modal-dialog p { color: var(--si-muted); }
+.si-modal-x { position: absolute; top: 12px; right: 14px; width: 38px; height: 38px; border: 0; border-radius: 50%; background: var(--si-paper); color: var(--si-ink); font-size: 25px; cursor: pointer; }
+.si-modal-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.si-modal-actions .si-button { display: inline-flex; align-items: center; text-decoration: none; }
+.si-consent { grid-template-columns: 22px 1fr !important; align-items: start; font-weight: 500 !important; }
+.si-consent input { min-height: 0; margin-top: 3px; }
+body.si-modal-open { overflow: hidden; }
+.si-honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important; }
+
+@media (max-width: 760px) {
+    .si-grid-2, .si-grid-3, .si-results { grid-template-columns: 1fr; }
+    .si-app { margin: 16px 0; border-radius: 16px; }
+}

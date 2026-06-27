@@ -1,0 +1,159 @@
+.htw-wrap .description {
+    margin-bottom: 16px;
+}
+
+.htw-board {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(180px, 1fr));
+    gap: 12px;
+    align-items: start;
+}
+
+.htw-column {
+    min-height: 360px;
+    background: #f6f7f7;
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.htw-column header {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.htw-card {
+    display: grid;
+    gap: 6px;
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-left: 4px solid #f4b400;
+    border-radius: 6px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.htw-card span,
+.htw-card small {
+    color: #50575e;
+}
+
+.htw-status {
+    width: 100%;
+}
+
+.htw-setup-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.htw-panel {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    padding: 18px;
+}
+
+.htw-panel-wide {
+    grid-column: 1 / -1;
+}
+
+.htw-panel h2 {
+    margin: 0 0 10px;
+}
+
+.htw-panel label {
+    display: block;
+    font-weight: 600;
+    margin: 14px 0 6px;
+}
+
+.htw-copy-line {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    align-items: center;
+}
+
+.htw-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.htw-status-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 14px 0 10px;
+}
+
+.htw-status-badge {
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    border: 1px solid #dcdcde;
+    border-radius: 999px;
+    background: #fff;
+    padding: 6px 10px;
+}
+
+.htw-status-badge.is-ok {
+    border-color: #00a32a;
+    color: #006b1b;
+}
+
+.htw-status-badge.is-pending {
+    border-color: #dba617;
+    color: #7a5600;
+}
+
+.htw-url-list {
+    display: grid;
+    gap: 10px;
+}
+
+.htw-url-list div {
+    display: grid;
+    gap: 4px;
+}
+
+.htw-url-list code {
+    display: block;
+    padding: 8px;
+    white-space: normal;
+    word-break: break-all;
+}
+
+@media (max-width: 1200px) {
+    .htw-board {
+        grid-template-columns: repeat(2, minmax(220px, 1fr));
+    }
+}
+
+@media (max-width: 900px) {
+    .htw-setup-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .htw-board {
+        grid-template-columns: 1fr;
+    }
+}
+
+.htw-help-box {
+    margin-top: 10px;
+    padding: 10px 12px;
+    border-left: 4px solid #dba617;
+    background: #fff8e5;
+}
+
+.htw-help-box p {
+    margin: 6px 0 0;
+}

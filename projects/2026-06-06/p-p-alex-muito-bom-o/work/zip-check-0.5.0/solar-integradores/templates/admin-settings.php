@@ -1,0 +1,55 @@
+<?php if (!defined('ABSPATH')) { exit; } ?>
+<div class="wrap">
+    <h1><?php esc_html_e('Solar Integradores', 'solar-integradores'); ?></h1>
+    <p><?php esc_html_e('Parâmetros padrão da calculadora. Tarifas variam por distribuidora, modalidade e vigência; mantenha-as editáveis e registre a fonte usada.', 'solar-integradores'); ?></p>
+    <form method="post" action="options.php">
+        <?php settings_fields('si_settings_group'); ?>
+        <table class="form-table">
+            <tr><th><label for="si_hsp"><?php esc_html_e('HSP padrão', 'solar-integradores'); ?></label></th><td><input id="si_hsp" name="si_settings[default_hsp]" type="number" min="0.1" step="0.001" value="<?php echo esc_attr($settings['default_hsp']); ?>"></td></tr>
+            <tr><th><label for="si_losses"><?php esc_html_e('Perdas padrão (%)', 'solar-integradores'); ?></label></th><td><input id="si_losses" name="si_settings[default_losses_percent]" type="number" min="0" max="45" step="0.01" value="<?php echo esc_attr($settings['default_losses_percent']); ?>"></td></tr>
+            <tr><th><label for="si_module"><?php esc_html_e('Potência padrão do módulo (W)', 'solar-integradores'); ?></label></th><td><input id="si_module" name="si_settings[default_module_power_w]" type="number" min="1" step="1" value="<?php echo esc_attr($settings['default_module_power_w']); ?>"></td></tr>
+            <tr><th><label for="si_tariff"><?php esc_html_e('Tarifa padrão (R$/kWh)', 'solar-integradores'); ?></label></th><td><input id="si_tariff" name="si_settings[default_tariff]" type="number" min="0" step="0.000001" value="<?php echo esc_attr($settings['default_tariff']); ?>"></td></tr>
+            <tr><th><label for="si_tariff_additions"><?php esc_html_e('Acréscimos estimados sobre tarifa ANEEL (%)', 'solar-integradores'); ?></label></th><td><input id="si_tariff_additions" name="si_settings[tariff_additions_percent]" type="number" min="0" max="100" step="0.1" value="<?php echo esc_attr($settings['tariff_additions_percent']); ?>"><p class="description"><?php esc_html_e('Estimativa para tributos e componentes não incluídos na tarifa regulada. Bandeiras tarifárias não estão incluídas.', 'solar-integradores'); ?></p></td></tr>
+            <tr><th><label for="si_lighting"><?php esc_html_e('COSIP padrão (R$/mês)', 'solar-integradores'); ?></label></th><td><input id="si_lighting" name="si_settings[default_public_lighting_fee]" type="number" min="0" step="0.01" value="<?php echo esc_attr($settings['default_public_lighting_fee']); ?>"><p class="description"><?php esc_html_e('Fallback usado quando não houver média configurada para a UF.', 'solar-integradores'); ?></p></td></tr>
+            <tr><th><label for="si_quote_email"><?php esc_html_e('E-mail para novos orçamentos', 'solar-integradores'); ?></label></th><td><input id="si_quote_email" name="si_settings[quote_notification_email]" type="email" class="regular-text" value="<?php echo esc_attr($settings['quote_notification_email']); ?>"></td></tr>
+            <tr><th><label for="si_business_whatsapp"><?php esc_html_e('WhatsApp comercial', 'solar-integradores'); ?></label></th><td><input id="si_business_whatsapp" name="si_settings[business_whatsapp]" type="text" class="regular-text" value="<?php echo esc_attr($settings['business_whatsapp']); ?>" placeholder="5585999999999"><p class="description"><?php esc_html_e('Use país + DDD + número. Será usado na futura integração com o modelo e atendimento.', 'solar-integradores'); ?></p></td></tr>
+            <tr><th><label for="si_valid_days"><?php esc_html_e('Validade da proposta (dias)', 'solar-integradores'); ?></label></th><td><input id="si_valid_days" name="si_settings[proposal_valid_days]" type="number" min="1" value="<?php echo esc_attr($settings['proposal_valid_days']); ?>"></td></tr>
+            <tr><th><label for="si_cash_discount"><?php esc_html_e('Desconto à vista (%)', 'solar-integradores'); ?></label></th><td><input id="si_cash_discount" name="si_settings[cash_discount_percent]" type="number" min="0" max="30" step="0.01" value="<?php echo esc_attr($settings['cash_discount_percent']); ?>"></td></tr>
+            <tr><th><label for="si_mp_pix"><?php esc_html_e('Mercado Pago Pix (%)', 'solar-integradores'); ?></label></th><td><input id="si_mp_pix" name="si_settings[mercado_pago_pix_fee]" type="number" min="0" max="30" step="0.01" value="<?php echo esc_attr($settings['mercado_pago_pix_fee']); ?>"></td></tr>
+            <tr><th><label for="si_mp_card"><?php esc_html_e('Mercado Pago cartão - processamento (%)', 'solar-integradores'); ?></label></th><td><input id="si_mp_card" name="si_settings[mercado_pago_card_processing_fee]" type="number" min="0" max="30" step="0.01" value="<?php echo esc_attr($settings['mercado_pago_card_processing_fee']); ?>"><p class="description"><?php esc_html_e('Padrão inicial para recebimento em 30 dias. Confirme na sua conta Mercado Pago.', 'solar-integradores'); ?></p></td></tr>
+            <tr><th><label for="si_mp_installments"><?php esc_html_e('Taxas por parcela', 'solar-integradores'); ?></label></th><td><input id="si_mp_installments" name="si_settings[mercado_pago_installment_fees]" type="text" class="large-text" value="<?php echo esc_attr($settings['mercado_pago_installment_fees']); ?>"><p class="description"><?php esc_html_e('Formato: 1:0,2:4.59,...,12:17.28. A taxa é somada ao processamento.', 'solar-integradores'); ?></p></td></tr>
+            <tr><th><label for="si_financial_discount"><?php esc_html_e('Taxa de desconto financeiro (%)', 'solar-integradores'); ?></label></th><td><input id="si_financial_discount" name="si_settings[financial_discount_rate]" type="number" min="0" max="50" step="0.01" value="<?php echo esc_attr($settings['financial_discount_rate']); ?>"></td></tr>
+            <tr><th><label for="si_tariff_inflation"><?php esc_html_e('Reajuste anual de energia (%)', 'solar-integradores'); ?></label></th><td><input id="si_tariff_inflation" name="si_settings[tariff_inflation_percent]" type="number" min="0" max="50" step="0.01" value="<?php echo esc_attr($settings['tariff_inflation_percent']); ?>"></td></tr>
+            <tr><th><label for="si_degradation"><?php esc_html_e('Degradação anual dos módulos (%)', 'solar-integradores'); ?></label></th><td><input id="si_degradation" name="si_settings[annual_degradation_percent]" type="number" min="0" max="10" step="0.01" value="<?php echo esc_attr($settings['annual_degradation_percent']); ?>"></td></tr>
+            <tr><th><label for="si_maintenance"><?php esc_html_e('Manutenção anual sobre investimento (%)', 'solar-integradores'); ?></label></th><td><input id="si_maintenance" name="si_settings[annual_maintenance_percent]" type="number" min="0" max="20" step="0.01" value="<?php echo esc_attr($settings['annual_maintenance_percent']); ?>"></td></tr>
+            <tr><th><label for="si_module_area"><?php esc_html_e('Área por módulo (m²)', 'solar-integradores'); ?></label></th><td><input id="si_module_area" name="si_settings[module_area_m2]" type="number" min="0.1" max="10" step="0.01" value="<?php echo esc_attr($settings['module_area_m2']); ?>"></td></tr>
+            <tr><th><label for="si_module_model"><?php esc_html_e('Modelo padrão de módulo', 'solar-integradores'); ?></label></th><td><input id="si_module_model" name="si_settings[default_module_model]" type="text" class="large-text" value="<?php echo esc_attr($settings['default_module_model']); ?>"></td></tr>
+            <tr><th><label for="si_inverter_model"><?php esc_html_e('Modelo padrão de inversor', 'solar-integradores'); ?></label></th><td><input id="si_inverter_model" name="si_settings[default_inverter_model]" type="text" class="large-text" value="<?php echo esc_attr($settings['default_inverter_model']); ?>"></td></tr>
+            <tr><th><label for="si_supplier_catalog"><?php esc_html_e('Catálogo de cotações', 'solar-integradores'); ?></label></th><td><textarea id="si_supplier_catalog" name="si_settings[supplier_catalog]" class="large-text code" rows="7"><?php echo esc_textarea($settings['supplier_catalog']); ?></textarea><p class="description"><?php esc_html_e('Uma cotação por linha: Fornecedor|kWp mínimo|kWp máximo|Módulo|Inversor|Custo do kit. O menor kit compatível será escolhido, sem mudar o preço final do site.', 'solar-integradores'); ?></p></td></tr>
+            <tr><th><label for="si_price_range"><?php esc_html_e('Variação da faixa de preço (%)', 'solar-integradores'); ?></label></th><td><input id="si_price_range" name="si_settings[price_range_percent]" type="number" min="0" max="40" step="0.1" value="<?php echo esc_attr($settings['price_range_percent']); ?>"><p class="description"><?php esc_html_e('Aplicada para cima e para baixo sobre o preço de referência.', 'solar-integradores'); ?></p></td></tr>
+            <tr><th><?php esc_html_e('Cadastro', 'solar-integradores'); ?></th><td><label><input name="si_settings[registration_enabled]" type="checkbox" value="1" <?php checked($settings['registration_enabled'], 1); ?>> <?php esc_html_e('Permitir cadastro de integradores', 'solar-integradores'); ?></label></td></tr>
+        </table>
+        <h2><?php esc_html_e('Preço instalado por faixa de potência', 'solar-integradores'); ?></h2>
+        <p><?php esc_html_e('Valores nacionais de referência em reais por watt-pico. Atualize quando houver um novo levantamento de mercado.', 'solar-integradores'); ?></p>
+        <p class="description">
+            <?php esc_html_e('Referência inicial: levantamentos Greener e Radar Solfácil publicados em 2025 e 2026, com preços de sistemas completos instalados no Brasil. Configuração inserida em junho de 2026.', 'solar-integradores'); ?>
+        </p>
+        <table class="widefat striped" style="max-width:720px">
+            <thead><tr><th><?php esc_html_e('Até (kWp)', 'solar-integradores'); ?></th><th><?php esc_html_e('Preço (R$/Wp)', 'solar-integradores'); ?></th></tr></thead>
+            <tbody>
+            <?php foreach ($settings['price_bands'] as $index => $band) : ?>
+                <tr>
+                    <td><input name="si_settings[price_bands][<?php echo esc_attr($index); ?>][max_kwp]" type="number" min="0.01" step="0.01" value="<?php echo esc_attr($band['max_kwp']); ?>"></td>
+                    <td><input name="si_settings[price_bands][<?php echo esc_attr($index); ?>][price_per_wp]" type="number" min="0.01" step="0.01" value="<?php echo esc_attr($band['price_per_wp']); ?>"></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+        </table>
+        <?php submit_button(); ?>
+    </form>
+    <hr>
+    <h2><?php esc_html_e('Shortcodes', 'solar-integradores'); ?></h2>
+    <p><code>[si_solar_calculator]</code> <?php esc_html_e('calculadora pública', 'solar-integradores'); ?></p>
+    <p><code>[si_integrator_registration]</code> <?php esc_html_e('cadastro de integradores', 'solar-integradores'); ?></p>
+    <p><code>[si_integrator_dashboard]</code> <?php esc_html_e('histórico do integrador', 'solar-integradores'); ?></p>
+</div>

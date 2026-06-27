@@ -1,0 +1,12 @@
+{
+  "name": "haja-geracao-solar/solar-integradores",
+  "description": "Dependencias do gerador de propostas em PDF.",
+  "type": "wordpress-plugin",
+  "require": {
+    "dompdf/dompdf": "^3.1"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}

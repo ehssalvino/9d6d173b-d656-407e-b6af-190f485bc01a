@@ -1,0 +1,274 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Proposta solar - Cliente Teste</title>
+    <style>
+        :root{--blue:#075b99;--blue2:#347fc3;--orange:#f7a24a;--ink:#153b5b;--muted:#59636d;--paper:#fff}
+        *{box-sizing:border-box}body{margin:0;background:#dce5ec;color:var(--muted);font-family:Arial,sans-serif}
+        .toolbar{position:sticky;top:0;z-index:9;display:flex;justify-content:center;gap:12px;padding:12px;background:#123b59}
+        .toolbar button{border:0;border-radius:999px;padding:12px 20px;background:var(--orange);color:#17334a;font-weight:800;cursor:pointer}
+        .proposal{width:210mm;margin:20px auto}.page{position:relative;width:210mm;min-height:297mm;padding:25mm 16mm 18mm;overflow:hidden;background:linear-gradient(145deg,#fff 0 55%,#fff5e9 100%);page-break-after:always;box-shadow:0 8px 35px rgba(0,0,0,.16)}
+        .page:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,91,153,.06),transparent 42%);pointer-events:none}
+        .topbar{position:absolute;left:0;right:0;top:0;height:17mm;background:var(--blue2);color:#fff;padding:6mm 16mm;text-align:right;letter-spacing:.08em}
+        .footer{position:absolute;left:0;right:0;bottom:0;height:10mm;background:var(--blue)}
+        h1,h2,h3{position:relative;margin:0;color:var(--ink);text-transform:uppercase}h1{font-size:34pt;line-height:1.02}h2{font-size:22pt;margin-bottom:8mm}h3{font-size:14pt;margin:6mm 0 3mm;color:var(--blue2)}
+        p{position:relative;font-size:11pt;line-height:1.55}.cover{padding-top:95mm}.cover h1{font-size:42pt;color:var(--blue)}.brand{font-size:24pt;color:var(--orange);font-weight:800;margin-bottom:12mm}.meta{margin-top:25mm;font-size:13pt;line-height:2}
+        .hero{position:absolute;left:0;right:0;top:0;height:88mm;background:linear-gradient(120deg,var(--blue),transparent),url('http://localhost/solar-local/wp-content/plugins/solar-integradores/assets/images/proposal-solar.jpg') center/cover}
+        .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:6mm;margin:8mm 0}.metric{text-align:center;padding:6mm 3mm;background:#f4f8fb;border-top:3px solid var(--orange)}.metric strong{display:block;color:#111;font-size:20pt}.metric span{font-size:9pt;text-transform:uppercase}
+        .services{display:grid;grid-template-columns:1fr 1fr;gap:5mm 10mm;margin-top:8mm}.service{padding-left:8mm;position:relative}.service:before{content:"✓";position:absolute;left:0;color:var(--blue2);font-size:18pt;font-weight:bold}
+        table{position:relative;width:100%;border-collapse:collapse;margin:5mm 0;font-size:10pt}th{background:var(--blue2);color:#fff;text-transform:uppercase}th,td{padding:3.2mm;border-bottom:1px solid #aac0d1;text-align:left}
+        .chart{position:relative;display:flex;align-items:flex-end;gap:3mm;height:72mm;padding:10mm 4mm 8mm;border:1px solid #cbd8e2;background:rgba(255,255,255,.75)}.month{flex:1;height:100%;display:flex;align-items:flex-end;justify-content:center;gap:1px;position:relative}.bar{width:42%;min-height:2px}.consumption{background:#f5b700}.generation{background:#087cc1}.month-label{position:absolute;bottom:-6mm;font-size:8pt}
+        .legend{display:flex;justify-content:center;gap:8mm;font-size:9pt;margin-top:7mm}.dot{display:inline-block;width:10px;height:10px;margin-right:4px}
+        .financial{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm}.financial .metric{background:#fff;border:1px solid #cbd8e2;border-top:4px solid var(--blue2)}
+        .cash-chart{height:105mm;display:flex;align-items:flex-end;gap:1.2mm;padding:8mm 3mm 10mm;border:1px solid #cbd8e2}.cash-col{flex:1;background:linear-gradient(var(--blue2),var(--blue));min-height:2px;position:relative}.cash-col span{position:absolute;bottom:-7mm;left:50%;transform:translateX(-50%);font-size:6.5pt}
+        .price-box{margin:12mm auto;padding:10mm;background:linear-gradient(var(--blue2),var(--blue));color:#fff;text-align:center;border-radius:8mm;width:72%}.price-box strong{display:block;font-size:28pt;margin-top:3mm}
+        .payments{display:grid;grid-template-columns:1fr 1fr;gap:3mm 8mm}.payment{padding:3mm;border-bottom:1px solid #d5dee5}.payment strong{color:var(--ink)}
+        .signature{display:grid;grid-template-columns:1fr 1fr;gap:20mm;margin-top:18mm;text-align:center}.signature div{padding-top:4mm;border-top:1px solid var(--blue)}
+        .note{padding:4mm;background:#edf6fc;border-left:4px solid var(--orange);font-size:9pt}.small{font-size:8.5pt}.regulation{columns:2;column-gap:10mm}
+        @media(max-width:850px){.proposal{width:100%;margin:0}.page{width:100%;min-height:auto;padding:80px 24px 60px}.metrics,.financial{grid-template-columns:1fr}.services,.payments{grid-template-columns:1fr}.hero{height:240px}.cover{padding-top:280px}}
+        @media print{@page{size:A4;margin:0}body{background:#fff}.toolbar{display:none}.proposal{margin:0}.page{box-shadow:none;margin:0;width:210mm;height:297mm;min-height:297mm}}
+    </style>
+</head>
+<body>
+<div class="toolbar"><button type="button" onclick="window.print()">Imprimir ou salvar em PDF</button></div>
+<main class="proposal">
+    <section class="page cover">
+        <div class="hero"></div>
+        <div class="brand">Haja Geração Solar</div>
+        <h1>Proposta<br>Comercial</h1>
+        <div class="meta">
+            <strong>Cliente:</strong> Cliente Teste<br>
+            <strong>Local:</strong> NITEROI - RJ<br>
+            <strong>Data:</strong> 06/06/2026<br>
+            <strong>Validade:</strong> 10 dias
+        </div>
+        <div class="footer"></div>
+    </section>
+
+    <section class="page">
+        <div class="topbar">PROPOSTA COMERCIAL</div>
+        <h2>Conheça a Haja Geração Solar</h2>
+        <p>Desenvolvemos soluções de geração distribuída para residências, empresas, indústrias e agronegócios. Esta proposta reúne dimensionamento, equipamentos, instalação, homologação e acompanhamento técnico.</p>
+        <div class="services">
+            <div class="service">Dimensionamento e proposta técnica inicial</div>
+            <div class="service">Projeto elétrico e documentação</div>
+            <div class="service">Fornecimento e logística dos equipamentos</div>
+            <div class="service">Instalação e comissionamento</div>
+            <div class="service">Solicitação de acesso à distribuidora</div>
+            <div class="service">Monitoramento e orientação de uso</div>
+        </div>
+        <h3>Como funciona</h3>
+        <p>Os módulos convertem a radiação solar em eletricidade. O inversor adequa essa energia à rede do imóvel, e o medidor bidirecional registra a energia consumida e injetada. Créditos excedentes seguem as regras da distribuidora e do Sistema de Compensação de Energia Elétrica.</p>
+        <h3>Regulamentação no Brasil</h3>
+        <div class="regulation">
+            <p>A geração distribuída é disciplinada pela Lei nº 14.300/2022, pela regulamentação da ANEEL e pelos procedimentos técnicos da distribuidora. A compensação, a cobrança pelo uso da rede e os prazos dependem da modalidade, da data de conexão e das regras vigentes.</p>
+            <p>O resultado definitivo depende da análise da unidade consumidora, padrão de entrada, demanda, rede local, sombreamento, estrutura e parecer de acesso.</p>
+        </div>
+        <p class="note">Esta proposta automatizada é preliminar e será validada tecnicamente antes da contratação.</p>
+        <div class="footer"></div>
+    </section>
+
+    <section class="page">
+        <div class="topbar">PROPOSTA COMERCIAL</div>
+        <h2>Dimensionamento do sistema</h2>
+        <p>O sistema foi estimado com os dados informados pelo cliente e a irradiação disponível para a localização selecionada.</p>
+        <div class="metrics">
+            <div class="metric"><strong>7,53 kWp</strong><span>Potência proposta</span></div>
+            <div class="metric"><strong>900 kWh</strong><span>Geração mensal</span></div>
+            <div class="metric"><strong>36,1 m²</strong><span>Área estimada</span></div>
+        </div>
+        <h3>Principais equipamentos e serviços</h3>
+        <table>
+            <thead><tr><th>Item</th><th>Modelo</th><th>Quantidade</th></tr></thead>
+            <tbody>
+            <tr><td>Módulos fotovoltaicos</td><td>Módulo N-Type 550 W ou superior</td><td>14</td></tr>
+            <tr><td>Inversor(es)</td><td>Inversor compatível com o projeto</td><td>Conforme projeto</td></tr>
+            <tr><td>Fornecedor cotado</td><td>A definir após cotação</td><td>Kit compatível</td></tr>
+            </tbody>
+        </table>
+        <h3>Consumo x geração</h3>
+        <div class="chart">
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:99.137931034483%"></div>
+                    <span class="month-label">Jan</span>
+                </div>
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:96.551724137931%"></div>
+                    <span class="month-label">Fev</span>
+                </div>
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:89.655172413793%"></div>
+                    <span class="month-label">Mar</span>
+                </div>
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:82.758620689655%"></div>
+                    <span class="month-label">Abr</span>
+                </div>
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:75.862068965517%"></div>
+                    <span class="month-label">Mai</span>
+                </div>
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:70.689655172414%"></div>
+                    <span class="month-label">Jun</span>
+                </div>
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:72.413793103448%"></div>
+                    <span class="month-label">Jul</span>
+                </div>
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:78.448275862069%"></div>
+                    <span class="month-label">Ago</span>
+                </div>
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:84.48275862069%"></div>
+                    <span class="month-label">Set</span>
+                </div>
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:89.655172413793%"></div>
+                    <span class="month-label">Out</span>
+                </div>
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:94.827586206897%"></div>
+                    <span class="month-label">Nov</span>
+                </div>
+                            <div class="month">
+                    <div class="bar consumption" style="height:95.785440613027%"></div>
+                    <div class="bar generation" style="height:100%"></div>
+                    <span class="month-label">Dez</span>
+                </div>
+                    </div>
+        <div class="legend"><span><i class="dot consumption"></i>Consumo</span><span><i class="dot generation"></i>Geração</span></div>
+        <div class="footer"></div>
+    </section>
+
+    <section class="page">
+        <div class="topbar">PROPOSTA COMERCIAL</div>
+        <h2>Análise financeira</h2>
+        <p>Todos os indicadores abaixo usam o mesmo valor de investimento apresentado pela calculadora, evitando diferenças entre o site e a proposta.</p>
+        <div class="financial">
+            <div class="metric"><strong>1,31</strong><span>Payback simples (anos)</span></div>
+            <div class="metric"><strong>R$ 202.392,20</strong><span>VPL em 25 anos</span></div>
+            <div class="metric"><strong>80,09%</strong><span>TIR estimada</span></div>
+        </div>
+        <h3>Premissas utilizadas</h3>
+        <table>
+            <tbody>
+            <tr><td>Economia anual inicial</td><td>R$ 14.324,85</td></tr>
+            <tr><td>Reajuste anual da energia</td><td>5,00%</td></tr>
+            <tr><td>Degradação anual dos módulos</td><td>0,80%</td></tr>
+            <tr><td>Taxa de desconto do VPL</td><td>8,00%</td></tr>
+            <tr><td>Manutenção anual estimada</td><td>0,50% do investimento</td></tr>
+            </tbody>
+        </table>
+        <div class="price-box">VALOR TOTAL DO INVESTIMENTO<strong>R$ 18.750,00</strong></div>
+        <p class="note">Valores financeiros são projeções, não garantia de rentabilidade. Tarifa, geração real, incidência solar e regras de compensação podem variar.</p>
+        <div class="footer"></div>
+    </section>
+
+    <section class="page">
+        <div class="topbar">PROPOSTA COMERCIAL</div>
+        <h2>Fluxo de caixa do projeto</h2>
+        <div class="cash-chart">
+                            <div class="cash-col" style="height:1%"><span>1</span></div>
+                            <div class="cash-col" style="height:1.7515939368717%"><span>2</span></div>
+                            <div class="cash-col" style="height:4.3765302918864%"><span>3</span></div>
+                            <div class="cash-col" style="height:7.1113258269124%"><span>4</span></div>
+                            <div class="cash-col" style="height:9.9605531932739%"><span>5</span></div>
+                            <div class="cash-col" style="height:12.928968560074%"><span>6</span></div>
+                            <div class="cash-col" style="height:16.021535403536%"><span>7</span></div>
+                            <div class="cash-col" style="height:19.243414311573%"><span>8</span></div>
+                            <div class="cash-col" style="height:22.599985073887%"><span>9</span></div>
+                            <div class="cash-col" style="height:26.09685347893%"><span>10</span></div>
+                            <div class="cash-col" style="height:29.739854712373%"><span>11</span></div>
+                            <div class="cash-col" style="height:33.535065251785%"><span>12</span></div>
+                            <div class="cash-col" style="height:37.488821558255%"><span>13</span></div>
+                            <div class="cash-col" style="height:41.607714978674%"><span>14</span></div>
+                            <div class="cash-col" style="height:45.898618933556%"><span>15</span></div>
+                            <div class="cash-col" style="height:50.368685518564%"><span>16</span></div>
+                            <div class="cash-col" style="height:55.025370993085%"><span>17</span></div>
+                            <div class="cash-col" style="height:59.87643578023%"><span>18</span></div>
+                            <div class="cash-col" style="height:64.929968256182%"><span>19</span></div>
+                            <div class="cash-col" style="height:70.194391547144%"><span>20</span></div>
+                            <div class="cash-col" style="height:75.678475424013%"><span>21</span></div>
+                            <div class="cash-col" style="height:81.39136179096%"><span>22</span></div>
+                            <div class="cash-col" style="height:87.342566384668%"><span>23</span></div>
+                            <div class="cash-col" style="height:93.542002563675%"><span>24</span></div>
+                            <div class="cash-col" style="height:100%"><span>25</span></div>
+                    </div>
+        <p class="small">Eixo horizontal: anos após a instalação. As barras mostram o saldo acumulado estimado, já descontada a manutenção configurada.</p>
+        <div class="metrics">
+            <div class="metric"><strong>R$ 18.750,00</strong><span>Investimento inicial</span></div>
+            <div class="metric"><strong>R$ 588.498,84</strong><span>Saldo em 25 anos</span></div>
+            <div class="metric"><strong>10.800 kWh</strong><span>Geração anual inicial</span></div>
+        </div>
+        <h3>Redução estimada da conta</h3>
+        <p>A economia considera a energia compensável e a tarifa estimada da distribuidora. O custo de disponibilidade, iluminação pública, demanda contratada e itens não compensáveis permanecem conforme a unidade consumidora.</p>
+        <div class="footer"></div>
+    </section>
+
+    <section class="page">
+        <div class="topbar">PROPOSTA COMERCIAL</div>
+        <h2>Formas de pagamento</h2>
+        <div class="metrics">
+            <div class="metric"><strong>R$ 17.812,50</strong><span>À vista</span></div>
+            <div class="metric"><strong>R$ 17.990,61</strong><span>Pix Mercado Pago</span></div>
+            <div class="metric"><strong>R$ 18.750,00</strong><span>Preço-base</span></div>
+        </div>
+        <h3>Cartão de crédito via Mercado Pago</h3>
+        <div class="payments">
+                            <div class="payment"><strong>1x de R$ 19.529,22</strong><br><span>Total: R$ 19.529,22</span></div>
+                            <div class="payment"><strong>2x de R$ 10.254,87</strong><br><span>Total: R$ 20.509,74</span></div>
+                            <div class="payment"><strong>3x de R$ 6.941,36</strong><br><span>Total: R$ 20.824,08</span></div>
+                            <div class="payment"><strong>4x de R$ 5.279,31</strong><br><span>Total: R$ 21.117,24</span></div>
+                            <div class="payment"><strong>5x de R$ 4.293,07</strong><br><span>Total: R$ 21.465,37</span></div>
+                            <div class="payment"><strong>6x de R$ 3.631,61</strong><br><span>Total: R$ 21.789,66</span></div>
+                            <div class="payment"><strong>7x de R$ 3.159,81</strong><br><span>Total: R$ 22.118,67</span></div>
+                            <div class="payment"><strong>8x de R$ 2.806,55</strong><br><span>Total: R$ 22.452,40</span></div>
+                            <div class="payment"><strong>9x de R$ 2.531,70</strong><br><span>Total: R$ 22.785,27</span></div>
+                            <div class="payment"><strong>10x de R$ 2.312,53</strong><br><span>Total: R$ 23.125,31</span></div>
+                            <div class="payment"><strong>11x de R$ 2.133,62</strong><br><span>Total: R$ 23.469,77</span></div>
+                            <div class="payment"><strong>12x de R$ 1.984,63</strong><br><span>Total: R$ 23.815,57</span></div>
+                    </div>
+        <p class="note">As parcelas incluem as taxas configuradas para que o valor líquido do projeto permaneça compatível com o preço-base. As condições efetivas devem ser confirmadas na conta Mercado Pago antes da cobrança.</p>
+        <h3>Escopo sujeito a validação</h3>
+        <p>Estrutura de fixação, frete, padrão de entrada, reforço estrutural, obras civis, proteção adicional, adequações de rede e condições especiais serão confirmados após vistoria e projeto executivo.</p>
+        <div class="footer"></div>
+    </section>
+
+    <section class="page">
+        <div class="topbar">PROPOSTA COMERCIAL</div>
+        <h2>Aceite da proposta</h2>
+        <p><strong>Proposta:</strong> SI-20260606-214916<br>
+        <strong>Emissão:</strong> 06/06/2026<br>
+        <strong>Validade:</strong> 10 dias corridos.</p>
+        <p>Declaro que recebi esta proposta preliminar e autorizo o prosseguimento para vistoria, validação técnica e emissão do instrumento contratual definitivo.</p>
+        <div class="signature">
+            <div>Cliente Teste<br>Cliente</div>
+            <div>Haja Geração Solar<br>Responsável comercial</div>
+        </div>
+        <h3>Contato</h3>
+        <p><strong>Eduardo Salvino</strong><br>(21) 98251-8899<br>contato@hajageracaosolar.com.br<br>www.hajageracaosolar.com.br</p>
+        <h3>Dados do cliente</h3>
+        <p>Cliente Teste<br>21999999999<br>teste@example.com<br>NITEROI - RJ</p>
+        <p class="note">O envio automático por WhatsApp exige a API oficial do WhatsApp Business. Até sua configuração, o sistema gera o link de compartilhamento e envia por e-mail conforme a opção do cliente.</p>
+        <div class="footer"></div>
+    </section>
+</main>
+</body>
+</html>
+

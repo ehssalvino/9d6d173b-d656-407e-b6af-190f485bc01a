@@ -1,0 +1,681 @@
+{
+  "file": "Proposta_Fazenda_Sr_Luiz_Sergio.docx",
+  "type": "docx",
+  "paragraphs": [
+    {
+      "index": 48,
+      "style": "Normal",
+      "text": "Nome: Luiz Sérgio de Oliveira Santos"
+    },
+    {
+      "index": 49,
+      "style": "Normal",
+      "text": "Data: 14 de maio de 2026"
+    },
+    {
+      "index": 50,
+      "style": "Normal",
+      "text": "Validade: 10 dias"
+    },
+    {
+      "index": 76,
+      "style": "Heading 1",
+      "text": "SUA PROPOSTA INCLUI"
+    },
+    {
+      "index": 80,
+      "style": "Body Text",
+      "text": "Dimensionamento do sistema, com proposta inicial do projeto"
+    },
+    {
+      "index": 81,
+      "style": "Body Text",
+      "text": "Desenvolvimento do projeto de engenharia"
+    },
+    {
+      "index": 85,
+      "style": "Body Text",
+      "text": "Importação de equipamentos e logística de entrega"
+    },
+    {
+      "index": 86,
+      "style": "Body Text",
+      "text": "Ativação do sistema, comissionamento e testes de performance"
+    },
+    {
+      "index": 90,
+      "style": "Body Text",
+      "text": "Instalação do sistema fotovoltaico e do sistema de monitoramento"
+    },
+    {
+      "index": 91,
+      "style": "Body Text",
+      "text": "Instalação de software de Gestão de balanço energético"
+    },
+    {
+      "index": 95,
+      "style": "Body Text",
+      "text": "Agendamento de vistoria junta à concessionária"
+    },
+    {
+      "index": 99,
+      "style": "Heading 1",
+      "text": "COMO FUNCIONA A ENERGIA"
+    },
+    {
+      "index": 103,
+      "style": "Normal",
+      "text": "Painéis Solares: Os painéis instalados no telhado captam a energia do Sol e a transformam em energia elétrica."
+    },
+    {
+      "index": 105,
+      "style": "Normal",
+      "text": "Inversor: Converte a energia elétrica gerada pelos painéis em um formato idêntico ao fornecido pela distribuidora de energia."
+    },
+    {
+      "index": 112,
+      "style": "Normal",
+      "text": "Quadro de Distribuição: A energia é conectada ao quadro de distribuição para que possa ser utilizada em qualquer equipamento interno."
+    },
+    {
+      "index": 116,
+      "style": "Normal",
+      "text": "Medidor de Energia Bidirecional: O medidor de energia bidirecional mede tanto o consumo do local como a energia injetada na rede."
+    },
+    {
+      "index": 120,
+      "style": "Normal",
+      "text": "Rede de Distribuição: Absorve qualquer excedente de energia injetada e fornece energia à noite e nos momentos de geração baixa."
+    },
+    {
+      "index": 123,
+      "style": "Normal",
+      "text": "REGULAMENTAÇÃO NO BRASIL"
+    },
+    {
+      "index": 125,
+      "style": "Body Text",
+      "text": "A Resolução Normativa da ANEEL nº 482 / 2012 tornou obrigatório o sistema de compensação de créditos, também conhecido como net metering. Assim, o usuário que desejar gerar sua própria A Resolução Normativa da ANEEL nº 482 / 2012 tornou obrigatório o sistema de compensação de créditos, também conhecido como net metering. Assim, o usuário que desejar gerar sua própria energia pode injetar todo o excedente na rede elétrica e gerar créditos."
+    },
+    {
+      "index": 127,
+      "style": "Body Text",
+      "text": "A Resolução Normativa da ANEEL nº 687 / 2015 definiu dois novos modelos de utilização da energia fotovoltaica."
+    },
+    {
+      "index": 129,
+      "style": "Body Text",
+      "text": "Um dos modelos é denominado geração compartilhada, onde a usina principal é construída em um local e a energia produzida pode ser utilizada remotamente em outras unidades consumidoras, desde que estejam na mesma concessão. Os créditos de energia gerados são válidos por até 60 meses. Há ainda a possibilidade de o consumidor utilizar esses créditos em outras unidades ( desde que as unidades consumidoras estejam na mesma área de concessão e sejam do mesmo titular)."
+    },
+    {
+      "index": 134,
+      "style": "Heading 2",
+      "text": "COMO É GERADA SUA CONTA"
+    },
+    {
+      "index": 136,
+      "style": "Body Text",
+      "text": "Nós calculamos a sua média de consumo energético mensal e, por meio de um software de engenharia, o número de placas necessárias para suprir a sua demanda."
+    },
+    {
+      "index": 138,
+      "style": "Heading 2",
+      "text": "DIMENSIONAMENTO DO SISTEMA"
+    },
+    {
+      "index": 140,
+      "style": "Body Text",
+      "text": "O sistema foi dimensionado baseando- se em análise das imagens por satélite e adotando- se como premissa que a área disponível é adequada para a instalação."
+    },
+    {
+      "index": 144,
+      "style": "Heading 5",
+      "text": "37.18 kWp"
+    },
+    {
+      "index": 145,
+      "style": "Normal",
+      "text": "POTÊNCIA PROPOSTA"
+    },
+    {
+      "index": 146,
+      "style": "Heading 5",
+      "text": "4.536,33 kWh/mês"
+    },
+    {
+      "index": 147,
+      "style": "Normal",
+      "text": "GERAÇÃO ESTIMADA"
+    },
+    {
+      "index": 148,
+      "style": "Heading 5",
+      "text": "200 m²"
+    },
+    {
+      "index": 149,
+      "style": "Normal",
+      "text": "ÁREA ÚTIL"
+    },
+    {
+      "index": 152,
+      "style": "Heading 2",
+      "text": "PRINCIPAIS EQUIPAMENTOS E SERVIÇOS INCLUSOS"
+    },
+    {
+      "index": 155,
+      "style": "Heading 2",
+      "text": "GARANTIAS"
+    },
+    {
+      "index": 161,
+      "style": "Heading 1",
+      "text": "ANÁLISE FINANCEIRA"
+    },
+    {
+      "index": 162,
+      "style": "Heading 1",
+      "text": "DO INVESTIMENTO"
+    },
+    {
+      "index": 164,
+      "style": "Body Text",
+      "text": "Somos seu provedor completo de energia solar. Além dos equipamentos, nossa proposta inclui todos os materiais, seguros e mão de obra da instalação. Quando comparado a qualquer outra aplicação de baixo risco, é nítida a vantagem de um sistema fotovoltaico. A análise abaixo é específica para seu investimento de R$ 48.442,86"
+    },
+    {
+      "index": 168,
+      "style": "Heading 3",
+      "text": "1 ano e 5 meses"
+    },
+    {
+      "index": 169,
+      "style": "Normal",
+      "text": "PAYBACK"
+    },
+    {
+      "index": 170,
+      "style": "Heading 3",
+      "text": "R$ 295.852,02"
+    },
+    {
+      "index": 171,
+      "style": "Normal",
+      "text": "VPL"
+    },
+    {
+      "index": 172,
+      "style": "Heading 3",
+      "text": "204,87%"
+    },
+    {
+      "index": 173,
+      "style": "Heading 6",
+      "text": "TIR"
+    },
+    {
+      "index": 179,
+      "style": "Normal",
+      "text": "RENDIMENTO NO PRIMEIRO ANO"
+    },
+    {
+      "index": 180,
+      "style": "Heading 6",
+      "text": "SALDO DA APLICAÇÃO APÓS 25 ANOS"
+    },
+    {
+      "index": 198,
+      "style": "Normal",
+      "text": "4,3%"
+    },
+    {
+      "index": 200,
+      "style": "Normal",
+      "text": "65,74%"
+    },
+    {
+      "index": 209,
+      "style": "Normal",
+      "text": "7,4%"
+    },
+    {
+      "index": 212,
+      "style": "Normal",
+      "text": "Sistema Fotovoltaico"
+    },
+    {
+      "index": 214,
+      "style": "Normal",
+      "text": "R$ 1.443.404,95"
+    },
+    {
+      "index": 218,
+      "style": "Normal",
+      "text": "Renda Fixa"
+    },
+    {
+      "index": 220,
+      "style": "Normal",
+      "text": "R$ 184.767,09"
+    },
+    {
+      "index": 224,
+      "style": "Normal",
+      "text": "Poupança"
+    },
+    {
+      "index": 226,
+      "style": "Normal",
+      "text": "R$ 93.201,92"
+    },
+    {
+      "index": 235,
+      "style": "Normal",
+      "text": "A aplicação da renda fixa foi baseada em uma taxa de 110% do CDI."
+    },
+    {
+      "index": 239,
+      "style": "Heading 1",
+      "text": "FLUXO DE CAIXA DO PROJETO"
+    },
+    {
+      "index": 243,
+      "style": "Heading 1",
+      "text": "REDUÇÃO DA CONTA DE ENERGIA"
+    },
+    {
+      "index": 246,
+      "style": "Normal",
+      "text": "Antes da instalação"
+    },
+    {
+      "index": 277,
+      "style": "Heading 1",
+      "text": "ACEITE DA PROPOSTA"
+    },
+    {
+      "index": 279,
+      "style": "Heading 7",
+      "text": "Emissão da Proposta: 14/05/2026"
+    },
+    {
+      "index": 280,
+      "style": "Normal",
+      "text": "Esta proposta é válida em todos seus termos por 10 dias corridos contados a partir da data de envio."
+    },
+    {
+      "index": 281,
+      "style": "Normal",
+      "text": "."
+    },
+    {
+      "index": 284,
+      "style": "Normal",
+      "text": "FORMA DE PAGAMENTO ESCOLHIDA"
+    },
+    {
+      "index": 286,
+      "style": "Heading 4",
+      "text": "INVESTIMENTO"
+    },
+    {
+      "index": 287,
+      "style": "Body Text",
+      "text": "À vista R$ 48.442,86"
+    },
+    {
+      "index": 288,
+      "style": "Heading 4",
+      "text": "FINANCIAMENTO"
+    },
+    {
+      "index": 291,
+      "style": "Normal",
+      "text": "Espero que você goste da proposta. Aguardamos a sua assinatura para fechar a negociação."
+    },
+    {
+      "index": 293,
+      "style": "Normal",
+      "text": "Linhares, em 14 de maio de 2026."
+    },
+    {
+      "index": 305,
+      "style": "Heading 1",
+      "text": "CONTATO"
+    },
+    {
+      "index": 306,
+      "style": "Normal",
+      "text": "Responsável Comercial:"
+    },
+    {
+      "index": 307,
+      "style": "Heading 1",
+      "text": "NOSSO"
+    },
+    {
+      "index": 308,
+      "style": "Normal",
+      "text": "ENDEREÇO"
+    },
+    {
+      "index": 309,
+      "style": "Heading 7",
+      "text": "CPO SAO CRISTOVAO, SN SAO CRISTOVAO"
+    },
+    {
+      "index": 310,
+      "style": "Heading 7",
+      "text": "Rio de Janeiro – RJ"
+    }
+  ],
+  "tables": [
+    {
+      "index": 0,
+      "rows": [
+        [
+          "ITEM",
+          "MODELO",
+          "QUANTIDADE"
+        ],
+        [
+          "Módulos fotovoltaicos",
+          "MODULO BIFACIAL 132 CEL. HJT 715W CABO 1.4M RISEN",
+          "52"
+        ],
+        [
+          "Inversor( es)",
+          "INVERSOR DE CORRENTE MONOFASICO 2MPPT 220V 10KW AUXSOL",
+          "2"
+        ]
+      ]
+    },
+    {
+      "index": 1,
+      "rows": [
+        [
+          "Solfacil",
+          "Opção 1: Entrada de R$ 0,00 e 12 parcelas de R$ 4.637,19"
+        ],
+        [
+          "Solfacil",
+          "Opção 2: Entrada de R$ 0,00 e 24 parcelas de R$ 2.619,62"
+        ],
+        [
+          "Solfacil",
+          "Opção 3: Entrada de R$ 0,00 e 36 parcelas de R$ 1.962,13"
+        ],
+        [
+          "Solfacil",
+          "Opção 4: Entrada de R$ 0,00 e 48 parcelas de R$ 1.644,28"
+        ]
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 622300,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 622300,
+      "bottom_margin": 0,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 622300,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 622300,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 622300,
+      "bottom_margin": 0,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 622300,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 622300,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    },
+    {
+      "page_width": 7562850,
+      "page_height": 10699750,
+      "top_margin": 0,
+      "bottom_margin": 177800,
+      "left_margin": 215900,
+      "right_margin": 0
+    }
+  ],
+  "inline_shapes": 1
+}
