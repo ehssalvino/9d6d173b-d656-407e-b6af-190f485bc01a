@@ -1,0 +1,49 @@
+# Local browser profiles and test caches
+chrome-*/
+*chrome*profile*/
+
+# Database and WordPress backups
+mysql-*/
+*-backup-*/
+wp-home-*-backup-*/
+home-before-*/
+*.sql
+*.frm
+*.ibd
+*.MAD
+*.MAI
+*.pma
+*.opt
+
+# Downloaded or extracted third-party packages
+elementor-*-extract/
+elementor-*.zip
+*.zip
+*.rar
+*.7z
+
+# Captured diagnostics and generated artifacts
+*.log
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+elementor-*-response.html
+elementor-*-dom.html
+
+# Common local/temp files
+.env
+.env.*
+*.tmp
+*.bak
+*.old
+Thumbs.db
+.DS_Store
+
+# Local auth/debug helpers that create cookies or temporary logins
+codex-auto-login.php
+check-editor-assets.php
+check-elementor-editor.php
+fetch-elementor-editor.php
+fetch-elementor-preview.php
