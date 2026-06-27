@@ -145,7 +145,7 @@ $summary = @"
 
 Repositorio central com copias filtradas dos projetos e entregaveis produzidos em chats do Codex.
 
-Origem local: `$SourceRoot`
+Origem local: $SourceRoot`
 Atualizado em: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss zzz')
 
 Arquivos copiados: $copied
@@ -165,6 +165,7 @@ Set-Content -LiteralPath (Join-Path $TargetRoot 'README.md') -Value $summary -En
 
 Write-Output "copied=$copied"
 Write-Output "skipped=$skipped"
+
 
 
 

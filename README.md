@@ -2,11 +2,11 @@
 
 Repositorio central com copias filtradas dos projetos e entregaveis produzidos em chats do Codex.
 
-Origem local: $SourceRoot
-Atualizado em: 2026-06-27 12:55:32 -03:00
+Origem local: C:\Users\Eduardo\Documents\Codex
+Atualizado em: 2026-06-27 13:27:41 -03:00
 
-Arquivos copiados: 15770
-Arquivos ignorados por filtro/tamanho: 19548
+Arquivos copiados: 792
+Arquivos ignorados por filtro/tamanho: 34526
 
 ## Estrutura
 
